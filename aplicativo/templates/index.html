@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+</head>
+<body>
+    <h3>Registros:</h3>
+    <ul>
+        {% for principal in principales%}
+        <li> Nombre: {{principal.nombre}}</li>
+        <li> Apellido: {{principal.apellido}}</li>
+        <li> Edad: {{principal.edad}}</li>
+        <li> Ocupacion: {{principal.ocupacion}}</li>
+        <li> Correo: {{principal.correo}}</li>
+        <li> Documento: {{principal.documento}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
